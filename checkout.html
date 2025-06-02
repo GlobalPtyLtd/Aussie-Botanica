@@ -1,0 +1,80 @@
+<!-- checkout.html - Checkout Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Plant & Seed Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header, footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+    input, select {
+      width: 100%;
+      padding: 0.5rem;
+      margin-top: 0.25rem;
+    }
+    .btn {
+      margin-top: 1.5rem;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 0.75rem;
+      width: 100%;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Checkout</h1>
+  </header>
+  <main>
+    <form>
+      <h2>Shipping Details</h2>
+      <label>Name:<input type="text" required></label>
+      <label>Address:<input type="text" required></label>
+      <label>City:<input type="text" required></label>
+      <label>State:<input type="text" required></label>
+      <label>Postcode:<input type="text" required></label>
+
+      <h2>Payment Method</h2>
+      <label for="payment">Choose a payment option:</label>
+      <select id="payment" required>
+        <option value="card">Credit/Debit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="afterpay">AfterPay</option>
+      </select>
+
+      <button class="btn" type="submit">Place Order</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 Plant & Seed Shop. All rights reserved.
+  </footer>
+</body>
+</html>
