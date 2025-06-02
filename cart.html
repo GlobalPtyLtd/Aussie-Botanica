@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cart - Plant & Seed Shop</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+    }
+    header, footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+    main {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .cart-item {
+      border-bottom: 1px solid #ddd;
+      padding: 1rem 0;
+    }
+    .btn {
+      margin-top: 1rem;
+      background: #4CAF50;
+      color: white;
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #388e3c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Your Cart</h1>
+  </header>
+  <main>
+    <div class="cart-item">
+      <strong>Tomato Seeds</strong> - $3.00
+    </div>
+    <div class="cart-item">
+      <strong>Basil Plant</strong> - $4.50
+    </div>
+    <button class="btn" onclick="window.location.href='checkout.html'">Proceed to Checkout</button>
+  </main>
+  <footer>
+    &copy; 2025 Plant & Seed Shop. All rights reserved.
+  </footer>
+</body>
+</html>
